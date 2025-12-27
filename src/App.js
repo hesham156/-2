@@ -1019,7 +1019,7 @@ const CalculatorApp = ({ prices, onAdminLogin, currentUser, generalSettings }) =
   return (
     <div className="max-w-6xl mx-auto p-4 md:p-8" dir="rtl">
       <div className="flex justify-between items-center mb-8 bg-white p-4 rounded-xl shadow-sm">
-        <div className="flex items-center gap-3"><div className="bg-blue-600 p-2 rounded-lg"><Calculator className="text-white w-6 h-6" /></div><div><h2 className="text-xl font-bold text-slate-800">حاسبة التسعير</h2><p className="text-sm text-slate-500">مرحباً بك في النظام</p></div></div>
+        <div className="flex items-center gap-3"><div className="bg-blue-600 p-2 rounded-lg"></div><div><h2 className="text-xl font-bold text-slate-800">حاسبة التسعير</h2><p className="text-sm text-slate-500">مرحباً بك في النظام</p></div></div>
         <button onClick={onAdminLogin} className="text-slate-500 hover:text-purple-600 px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 border border-slate-200 hover:border-purple-200 transition-colors"><Lock className="w-4 h-4" /> لوحة المسؤول</button>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
