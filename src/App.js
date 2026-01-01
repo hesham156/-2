@@ -302,17 +302,9 @@ const BalanceConfirmationApp = () => {
                        </div>
                     </div>
                   </div>
-                  <div className="flex justify-between items-end mt-4 pt-2">
+                  <div className="flex justify-end items-end mt-4 pt-2">
+                 
                      <div className="text-center w-1/3">
-                        <div className="border-b border-black mb-1 pb-2"></div>
-                        <p className="text-xs font-bold">Signature / التوقيع</p>
-                     </div>
-                     <div className="text-center w-1/3">
-                        <div className="border-b border-black mb-1 pb-2"></div>
-                        <p className="text-xs font-bold">Stamp / الختم</p>
-                     </div>
-                     <div className="text-center w-1/3">
-                        <div className="mb-1 pb-2 font-bold text-sm ">{formData.customerName}</div>
                         <p className="text-xs font-bold text-gray-500">Client Name / اسم العميل</p>
                      </div>
                   </div>
@@ -323,10 +315,22 @@ const BalanceConfirmationApp = () => {
                <div className="text-center w-64 relative">
                  <div className="h-20 flex items-end justify-center pb-2 relative">
                     {formData.stampUrl && (
-                      <img src={formData.stampUrl} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 opacity-90 mix-blend-multiply pointer-events-none" alt="Stamp" crossOrigin="anonymous" />
+                      <img src={formData.stampUrl} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 opacity-90 mix-blend-multiply pointer-events-none mt-[75px]" alt="Stamp" crossOrigin="anonymous" style={{opacity:"1",width:"77%"}} />
                     )}
                  </div>
                </div>
+               <div style={{width:"90%",display:"flex",gap:"44px",flexDirection:"column",alignItems:"end",justifyContent:"center"}}>
+                   <div className="text-center w-1/3">
+                        <p className="text-xs font-bold">Signature / التوقيع</p>
+                          <div className="border-b border-black mb-1 pb-2"></div>
+
+                    </div>
+                     <div className="text-center w-1/3">
+                        <p className="text-xs font-bold">Stamp / الختم</p>
+                         <div className="border-b border-black mb-1 pb-2"></div>
+
+                     </div>
+                     </div>
             </div>
           </div>
 
